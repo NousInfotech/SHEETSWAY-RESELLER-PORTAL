@@ -1,6 +1,6 @@
 'use client';
 
-import { IconBrightness } from '@tabler/icons-react';
+import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import * as React from 'react';
 
@@ -34,12 +34,13 @@ export function ModeToggle() {
 
   return (
     <Button
-      variant='secondary'
+      variant='ghost'
       size='icon'
-      className='group/toggle size-8'
+      className='group/toggle h-8 w-8 rounded-lg border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-all duration-200'
       onClick={handleThemeToggle}
     >
-      <IconBrightness />
+      <Sun className='h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />
+      <Moon className='absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100' />
       <span className='sr-only'>Toggle theme</span>
     </Button>
   );

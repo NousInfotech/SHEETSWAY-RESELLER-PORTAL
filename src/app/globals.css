@@ -156,3 +156,82 @@
   /* Apply the reveal animation */
   animation: reveal 0.4s ease-in-out forwards;
 }
+
+/* Scrollbar Hide Utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+/* Smooth scrolling for all elements */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Custom sidebar collapsed state fixes */
+.group-data-[collapsible=icon] .sidebar-menu-button {
+  width: 4rem !important;
+  height: 4rem !important;
+  padding: 1rem !important;
+  justify-content: center !important;
+  margin: 0.5rem auto !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.group-data-[collapsible=icon] .sidebar-menu-button svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  min-width: 1rem !important;
+  min-height: 1rem !important;
+}
+
+.group-data-[collapsible=icon] .sidebar-menu-button [data-slot="sidebar-menu-button"] {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Ensure proper spacing when collapsed */
+.group-data-[collapsible=icon] .sidebar-menu {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure sidebar has proper width when collapsed */
+.group-data-[collapsible=icon] {
+  width: 5rem !important;
+  min-width: 5rem !important;
+}
+
+/* Ensure sidebar content doesn't overflow */
+.group-data-[collapsible=icon] .sidebar-content {
+  width: 5rem !important;
+  min-width: 5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* Center all content in collapsed sidebar */
+.group-data-[collapsible=icon] .sidebar-group {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+/* Ensure icon containers are properly sized */
+.group-data-[collapsible=icon] .sidebar-menu-button > div:first-child {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  min-width: 2.5rem !important;
+  min-height: 2.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

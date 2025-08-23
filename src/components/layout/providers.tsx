@@ -2,7 +2,7 @@
 'use client';
 // import { useTheme } from 'next-themes';
 import React from 'react';
-import { ActiveThemeProvider } from '../active-theme';
+
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 
@@ -55,9 +55,7 @@ export default function Providers({
 
   return (
     <>
-      <ActiveThemeProvider initialTheme={activeThemeValue}>
-        <AuthProvider>{children}</AuthProvider>
-      </ActiveThemeProvider>
+      <AuthProvider>{children}</AuthProvider>
     </>
   );
 }

@@ -15,59 +15,33 @@ export type Product = {
 export const navItems: NavItem[] = [
   {
     title: 'Dashboard',
-    url: '/dashboard/overview',
+    url: '/reseller/dashboard',
     icon: 'dashboard',
-    isActive: false,
+    isActive: true,
     shortcut: ['d', 'd'],
     items: []
   },
   {
-    title: 'Tour Catalog & Details Page',
-    url: '/dashboard/tour-catelog',
-    icon: 'map', 
+    title: 'Referrals',
+    url: '/reseller/listings',
+    icon: 'users', 
     isActive: false,
-    shortcut: ['t', 't'],
+    shortcut: ['r', 'r'],
     items: []
   },
   {
-    title: 'Bookings',
-    url: '/dashboard/booking',
-    icon: 'luggage', 
-    isActive: false,
-    shortcut: ['b', 'b'],
-    items: []
-  },
-  {
-    title: 'Commissions',
-    url: '/dashboard/commissions',
+    title: 'Earnings',
+    url: '/reseller/earnings',
     icon: 'handCoins', 
     isActive: false,
-    shortcut: ['m', 'm'],
+    shortcut: ['e', 'e'],
     items: []
   },
   {
-    title: 'Marketing, QR & Link Generators',
-    url: '/dashboard/marketingtools',
-    icon: 'badgedollar', 
-    isActive: false,
-    shortcut: ['m', 'm'],
-    items: []
-  },
-  
-  {
-    title: 'Payout Management',
-    url: '/dashboard/payouts',
-    icon: 'payments', 
-    isActive: false,
-    shortcut: ['y', 'y'],
-    items: []
-  },
-  
-  {
-    title: 'Contact',
-    url: '/dashboard/contact',
-    icon: 'connect', // IconMessageCircle
-    shortcut: ['c', 'c'],
+    title: 'Settings',
+    url: '/reseller/settings',
+    icon: 'settings', 
+    shortcut: ['s', 's'],
     isActive: false,
     items: []
   }

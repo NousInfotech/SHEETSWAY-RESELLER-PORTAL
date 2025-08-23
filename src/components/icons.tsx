@@ -34,7 +34,10 @@ import {
   IconBrandGithub,
   IconFilePlus,
   IconBriefcase,
-  IconClock
+  IconClock,
+  IconLink,
+  IconUsers,
+  IconShare
 } from '@tabler/icons-react';
 import { MapPin, Luggage, BadgeDollarSign, HandCoins  } from "lucide-react";
 
@@ -79,6 +82,9 @@ export const Icons = {
   engagements: IconBriefcase,
   history: IconClock,
   payments: IconCreditCard,
+  link: IconLink,
+  users: IconUsers,
+  share: IconShare,
 // ###################
   map: MapPin,
   luggage: Luggage,
